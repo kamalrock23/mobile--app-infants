@@ -163,7 +163,7 @@ p { font-size: 14px; color: #000; }
 
 .custom-select-wrap { padding-top: 25px; }
 .custom-select { padding-right: 50px; position: relative; overflow: hidden; border-radius: 4px; background: rgba(0, 0, 0, 0.04); }
-.custom-select select { padding: 5px 60px 5px 10px; width: 120%; color: rgb(153, 153, 153); min-height: 48px; border: medium none; background: transparent; }
+.custom-select select { padding: 5px 45px 5px 10px; width: calc(100% + 70px); color: rgb(153, 153, 153); min-height: 48px; border: medium none; background: transparent; }
 .custom-select select:focus { outline: none; }
 .custom-select > i { position: absolute; right: 10px; top: 50%; margin-top: -12px; font-size: 24px; color: rgb(153, 153, 153); }
 
@@ -188,7 +188,7 @@ p { font-size: 14px; color: #000; }
 .detail-form__col:first-child { color: #000; text-align: left; }
 
 /* ### copy box ### */
-.input-form { padding: 20px 30px; }
+.input-form { padding: 20px 30px 10px; }
 .input-form .form-control { padding: 10px 0; color: rgb(108, 108, 108); border-radius: 0; border: medium none; border-bottom: 1px solid #bbb; font-size: 16px; }
 .input-form .form-group { position: relative; }
 .input-form .form-group .form-control__label { position: absolute; left: 0; top: 0; }
@@ -203,7 +203,7 @@ p { font-size: 14px; color: #000; }
 .btn.btn-block { width: 100%; }
 .btn.btn-round { border-radius: 25px; }
 .btn.btn-primary { background: #fff; border-color: #fff; color: #000; }
-.btn.btn-primary:hover { background: #fff; color: #fff; outline: none; }
+.btn.btn-primary:hover { background: #fff; color: rgba(200, 0, 0, 1); outline: none; }
 
 .btn.btn-secondary { background: transparent; color: #fff; border-color: transparent; }
 .btn.btn-secondary:hover { background: transparent; color: #fff; outline: none; }
@@ -235,6 +235,22 @@ p { font-size: 14px; color: #000; }
 .custom-radio .custom-radio__icon:after { position: absolute; content: ""; display: none; left: 4px; top: 1px; width: 4px; height: 8px; border: solid white; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
 .custom-radio input[type='radio']:checked ~ .custom-radio__icon:after, 
 .custom-radio input[type='checkbox']:checked ~ .custom-radio__icon:after { display: block; }
+
+	/* ### Main Page ### */
+	.main-page { padding: 10px 0; display: flex; align-items: center; min-height: 100vh; background: #f2f3f4; }
+	.main-page__container { margin: 0 auto; display: flex; align-items: center; max-width: 755px; }
+	.main-page__pic { margin-bottom: 12px; max-width: 64px; }
+	.main-page__title { margin-bottom: 5px; font-size: 40px; font-weight: 900; color: rgb(49, 49, 57); }
+	.main-page__subtitle { font-size: 16px; color: rgb(178, 178, 192); }
+	.main-page__desc { margin-top: 20px; margin-bottom: 30px; font-size: 20px; color: rgb(49, 49, 57); }
+	.main-page__text { padding: 10px 10px 10px 40px; }
+	.main-page__buttons > a { text-decoration: none; display: inline-block; height: 32px; border-radius: 16px; padding: 7px 12px; margin-right: 12px; background: rgb(0, 0, 0); font-weight: bold; font-size: 14px; line-height: 18px; color: white; text-transform: uppercase; }
+	.mobile-frame { padding: 10px 15px 10px 15px; max-width: 375px; border-radius: 40px; background: url(../images/mobile-frame.svg); background-size: 100% 100%; }
+	.mobile-frame__header { border-radius: 40px 40px 0 0; background: rgba(200, 0, 0, 1); }
+	.mobile-frame__footer { border-radius: 0 0 40px 40px; background: rgba(200, 0, 0, 1); }
+	.mobile-frame__header img,
+	.mobile-frame__footer img { margin: 0 auto; }
+	.mobile-frame__body { margin: -1px 0 -3px; border: medium none; max-width: 100%; }
 
 	/* ### Footer Tabs ### */
 	.footer-tabs { list-style-type: none; display: flex; text-align: center; }
@@ -310,6 +326,13 @@ p { font-size: 14px; color: #000; }
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		.main-page { padding: 0; min-height: auto; display: block; }
+		.main-page__container { max-width: none; margin: 0; display: block; }
+		.mobile-frame__header, .mobile-frame__footer, .main-page__text { display: none; }
+		.mobile-frame__body { margin: 0; height: 100vh; width: 100%; }
+		.mobile-frame { padding: 0; max-width: none; border-radius: 40px; background: none; }
+		.main-page { background: rgba(200, 0, 0, 1); }
+
 	}
 
 	/* All Mobile Sizes (devices and browser) */

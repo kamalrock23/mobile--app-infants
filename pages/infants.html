@@ -18,8 +18,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS ================================================== -->
-    <link rel="stylesheet" href="css/icons.css">
-	<link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../assets/css/icons.css">
+	<link rel="stylesheet" href="../assets/css/global.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,7 +33,7 @@
     <!-- toggle "active" class on click of menu -->
     <aside class="sidebar js-sidebar">
         <div class="sidebar__header">
-            <img class="sidebar__profile-pic" src="images/icons/user.svg" alt="">
+            <img class="sidebar__profile-pic" src="../assets/images/icons/user.svg" alt="">
             <a class="sidebar__profile-name" href="#">kamalrock23@gmail.com</a>
         </div>
         <div class="sidebar__body">
@@ -45,82 +45,68 @@
     </aside>
     <span class="sidebar-overlay js-sidebar-toggle"></span>
     <!--  \ Sidebar / -->
-
-    <!--  / Reservations Page \ -->
+    
+    <!--  / Infants Page \ -->
     <section class="homePage fullheight">
 
         <!-- / Header \ -->
         <div class="fullheight__header homePage__header">
             <div class="homePage__main-header">
                 <button class="js-sidebar-toggle btn-icon"><i class="icon-menu"></i></button>
-                <h1 class="homePage__title">Reservations</h1>
-                <a href="reservations-form.html" class="btn-icon"><i class="icon-plus"></i></a>
+                <h1 class="homePage__title">Mes Enfants</h1>
+                <a href="infants-form.html" class="btn-icon"><i class="icon-plus"></i></a>
             </div>
             <div class="homePage__sub-header">
-                Reservations
+                Mes Enfants
             </div>
         </div>
-        <!-- \ Header / -->
+        <!-- / Header \ -->
 
-        <!-- / Body Empty State \ -->
+        <!-- / Body \ -->
+        <!-- Empty State -->
         <!-- <div class="fullheight__body homePage__body light-bg">
             <div class="fullheight__body--inner">
                 <div class="empty-state">
-                    <i class="icon-reservation"></i>
-                    No events Yet.
+                    <i class="icon-infants"></i>
+                    There are no items Yet.
                 </div>
             </div>
         </div> -->
-        <!-- / Body Empty State \ -->
+        <!-- \ Body / -->
 
         <!-- / Body \ -->
         <div class="fullheight__body homePage__body light-bg">
             <div class="fullheight__body--inner">
-                <div class="event-list__wrapper">
-                    <div class="event-list__item">
-                        <div class="event-list__date">
-                            Saturday, 7 November, 2020
-                        </div>
-                        <a href="reservations-details.html" class="event-item">
-                            <span class="event-item__text">
-                                <span class="event-item__title">Physiques - bkjbn</span>
-                                <span class="event-item__subtitle">11/7/2020</span>
-                            </span>
-                            <span class="event-item__date">10:00 am</span>
-                        </a>
-                        <a href="reservations-details.html" class="event-item">
-                            <span class="event-item__text">
-                                <span class="event-item__title">Physiques - bkjbn</span>
-                                <span class="event-item__subtitle">11/7/2020</span>
-                            </span>
-                            <span class="event-item__date">10:00 am</span>
-                        </a>
-                    </div>
-                    <div class="event-list__item">
-                        <div class="event-list__date">
-                            Saturday, 7 November, 2020
-                        </div>
-                        <a href="reservations-details.html" class="event-item">
-                            <span class="event-item__text">
-                                <span class="event-item__title">Physiques - bkjbn</span>
-                                <span class="event-item__subtitle">11/7/2020</span>
-                            </span>
-                            <span class="event-item__date">10:00 am</span>
-                        </a>
-                    </div>
+                <div class="list-wrapper">
+                    <a href="infants-details.html" class="list-item list-item--noborder">
+                        <img class="list-item__pic" src="../assets/images/girl-pic.jpeg" alt="">
+                        <span class="list-item__title text-left">Creer le profil de votre enfant (2 min)</span>
+                    </a>
+                    <a href="infants-details.html" class="list-item list-item--noborder">
+                        <img class="list-item__pic" src="../assets/images/girl-pic.jpeg" alt="">
+                        <span class="list-item__title text-left">Creer le profil de votre enfant (2 min)</span>
+                    </a>
+                    <a href="infants-details.html" class="list-item list-item--noborder">
+                        <img class="list-item__pic" src="../assets/images/girl-pic.jpeg" alt="">
+                        <span class="list-item__title text-left">Creer le profil de votre enfant (2 min)</span>
+                    </a>
+                    <a href="infants-details.html" class="list-item list-item--noborder">
+                        <img class="list-item__pic" src="../assets/images/girl-pic.jpeg" alt="">
+                        <span class="list-item__title text-left">Creer le profil de votre enfant (2 min)</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- \ Body / -->    
+        <!-- / Body \ -->
 
         <!-- / Footer \ -->
         <div class="fullheight__footer homePage__footer">
             <ul class="footer-tabs">
-                <li><a href="infants.html">
+                <li class="active"><a href="#">
                     <i class="icon-infants"></i>
                     Mes Enfants
                 </a></li>
-                <li class="active"><a href="#">
+                <li><a href="reservations.html">
                     <i class="icon-reservation"></i>
                     Reservations
                 </a></li>
@@ -130,17 +116,17 @@
                 </a></li>
             </ul>
         </div>
-        <!-- \ Footer / -->
+        <!-- / Footer \ -->
 
     </section>
-    <!--  \ Reservations Page / -->
+    <!--  \ Infants Page / -->
 
     <!-- JS ================================================== -->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 
     <!-- CUSTOM JS ================================================== -->
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="../assets/js/custom.js"></script>
 
 </body>
 
